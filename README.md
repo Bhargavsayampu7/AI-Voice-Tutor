@@ -23,8 +23,8 @@ An interactive AI-powered voice tutor designed to help children aged 6-12 learn 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd ai-voice-tutor
+git clone https://github.com/Bhargavsayampu7/AI-Voice-Tutor.git
+cd AI-Voice-Tutor
 ```
 
 2. Install dependencies:
@@ -94,16 +94,17 @@ The app uses Google's Gemini API for AI responses. If you don't have an API key,
 To add your API key:
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Create a new API key
-3. Replace the empty `apiKey` variable in `src/App.js`
+3. Replace the empty `GEMINI_API_KEY` variable in `src/config.js`
 
 ## Project Structure
 
 ```
-ai-voice-tutor/
+AI-Voice-Tutor/
 ├── public/
 │   └── index.html
 ├── src/
 │   ├── App.js          # Main application component
+│   ├── config.js       # Configuration file
 │   ├── index.js        # Application entry point
 │   └── index.css       # Global styles with Tailwind
 ├── package.json
@@ -114,7 +115,7 @@ ai-voice-tutor/
 ## Customization
 
 ### Adding New Languages
-1. Add the language code and name to `SUPPORTED_LANGUAGES` in `App.js`
+1. Add the language code and name to `SUPPORTED_LANGUAGES` in `src/config.js`
 2. Update the system prompt in `geminiService.generateResponse()`
 
 ### Adding New Roleplay Scenarios
